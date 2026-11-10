@@ -32,6 +32,8 @@ export const site = {
     { icon: "💻", title: "Website Development", text: "Modern, responsive and fast websites for your business." },
     { icon: "📊", title: "MS Office", text: "Professional Word, Excel and PowerPoint documents and reports." },
   ],
+  email: "",   // <- apni email yahan likhen (Footer + SEO use karega)
+  url: "",     // <- live site URL, e.g. https://faiza.dev
   social: {
     linkedin: "https://www.linkedin.com/in/faiza-manzoor-b835012b8/",
     github: "https://github.com/Fizza321",
@@ -56,6 +58,8 @@ export const navLinks = [
 export const projects = [
   {
     title: "Social Media Ads Campaigns",
+    problem: "The business needed more reach and sales but had no structured paid-social strategy.",
+    solution: "Planned targeted Facebook & Instagram campaigns with audience segmentation and creatives built for conversions.",
     category: "Social Media Marketing",
     icon: "📱",
     description:
@@ -66,6 +70,8 @@ export const projects = [
   },
   {
     title: "Services-Based Website",
+    problem: "Visitors couldn't quickly understand what the business offers or how to get in touch.",
+    solution: "Designed a clear, responsive, SEO-friendly site with defined service sections and a visible contact path.",
     category: "Website Development",
     icon: "🛠️",
     description:
@@ -76,6 +82,8 @@ export const projects = [
   },
   {
     title: "E-commerce Website",
+    problem: "Customers had no easy way to browse products and order online.",
+    solution: "Built a responsive online store with a browsable catalogue and a simple ordering flow.",
     category: "Website Development",
     icon: "🛒",
     description:
@@ -86,6 +94,8 @@ export const projects = [
   },
   {
     title: "One-Page Website",
+    problem: "The client needed a fast, focused web presence without a multi-page build.",
+    solution: "Created a clean single-scroll page that presents everything important with a clear call to action.",
     category: "Website Development",
     icon: "📄",
     description:

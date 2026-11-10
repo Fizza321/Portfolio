@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Social Links (GitHub, LinkedIn, etc.) */}
         <div className="flex items-center gap-5 text-xl">
           <a
-            href="https://github.com/faizamanzoor" // Yahan apna GitHub link dal dein
+            href={site.social.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -29,7 +29,7 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/faizamanzoor" // Yahan apna LinkedIn link dal dein
+            href={site.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -38,7 +38,7 @@ export default function Footer() {
             <FaLinkedin />
           </a>
           <a
-            href={`mailto:${site.email || "faiza@example.com"}`}
+            href={site.email ? `mailto:${site.email}` : "/contact"}
             aria-label="Email"
             className="transition-colors hover:text-primary text-slate-300"
           >

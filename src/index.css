@@ -116,3 +116,26 @@ body::after {
   color: var(--color-primary);
   transform: translateY(-3px);
 }
+
+/* ===== Premium upgrade: glass cards, gradient mesh ===== */
+.glass-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+  transition: border-color .3s, box-shadow .3s;
+}
+.glass-card:hover { border-color: rgba(139,224,78,.4); box-shadow: 0 20px 50px -25px rgba(139,224,78,.45); }
+
+.mesh-blob { position: absolute; border-radius: 9999px; filter: blur(90px); opacity: .5; animation: drift 14s ease-in-out infinite; }
+@keyframes drift {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(60px,-40px) scale(1.15); }
+  66% { transform: translate(-50px,30px) scale(.9); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob, .gradient-text { animation: none; }
+  html { scroll-behavior: auto; }
+}

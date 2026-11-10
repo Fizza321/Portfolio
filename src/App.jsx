@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import SmoothScroll from "@/components/SmoothScroll";
 
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -16,7 +17,8 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#070b14] text-white">
+    <div className="flex min-h-screen flex-col bg-[#070b14] text-white">
+      <SmoothScroll />
       <ScrollToTop />
       <Navbar />
 
@@ -25,7 +27,6 @@ export default function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/skills" empower element={<Skills />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
